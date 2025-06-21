@@ -41,7 +41,39 @@ export default function Services() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
+                    <strong>Ansible AWX:</strong> Enterprise-grade automation orchestration with centralized job management
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Custom Python Solutions:</strong> Tailored automation scripts using NETCONF, RESTCONF, and vendor APIs
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>GitOps Workflows:</strong> Infrastructure-as-Code with Git-based change management and rollback
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
                     <strong>Configuration Management:</strong> Automated device configuration and compliance monitoring
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+  </svg>
+                  <div>
+                    <strong>DevOps Integration:</strong> CI/CD pipelines for network changes with automated testing and validation
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -50,14 +82,6 @@ export default function Services() {
                   </svg>
                   <div>
                     <strong>Zero-Touch Provisioning:</strong> Rapid deployment of new network devices and services
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <div>
-                    <strong>Change Management:</strong> Automated rollback and validation processes
                   </div>
                 </li>
               </ul>
@@ -100,6 +124,30 @@ export default function Services() {
                     <strong>Intelligent Optimization:</strong> Automatic performance tuning and resource allocation
                   </div>
                 </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>RAG (Retrieval-Augmented Generation):</strong> Intelligent document retrieval and automated response generation
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Natural Language Processing:</strong> Convert complex network requirements into automated workflows
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Machine Learning Models:</strong> Custom-trained models for network pattern recognition and optimization
+                  </div>
+                </li>
               </ul>
             </div>
 
@@ -129,6 +177,14 @@ export default function Services() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
+                    <strong>SOAR (Security Orchestration):</strong> Automated incident response and threat mitigation workflows
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
                     <strong>Automated Response:</strong> Immediate containment and mitigation of security incidents
                   </div>
                 </li>
@@ -138,6 +194,22 @@ export default function Services() {
                   </svg>
                   <div>
                     <strong>Compliance Monitoring:</strong> Continuous assessment of security policies
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Vulnerability Management:</strong> Automated scanning, assessment, and remediation of security weaknesses
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Zero Trust Implementation:</strong> Automated micro-segmentation and identity-based access controls
                   </div>
                 </li>
               </ul>
@@ -152,8 +224,8 @@ export default function Services() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Consulting & Strategy</h3>
               <p className="text-gray-700 mb-6">
-                Partner with our expert consultants to develop a comprehensive network automation 
-                strategy that aligns with your business objectives and technical requirements.
+                Develop a comprehensive network automation strategy that aligns with your business 
+                objectives and technical requirements through personalized guidance and hands-on expertise.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
@@ -161,7 +233,7 @@ export default function Services() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <strong>Strategic Planning:</strong> Comprehensive automation roadmap development
+                    <strong>Automation Roadmapping:</strong> Strategic planning for Ansible AWX deployment and Python automation frameworks
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -169,7 +241,7 @@ export default function Services() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <strong>Technology Assessment:</strong> Evaluation of current infrastructure and tools
+                    <strong>AI/ML Integration:</strong> Implementation guidance for RAG systems and predictive analytics in network operations
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -177,7 +249,23 @@ export default function Services() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <strong>Training & Support:</strong> Team enablement and knowledge transfer
+                    <strong>Security Architecture:</strong> SOAR implementation and Zero Trust network design consultation
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>GitOps & DevOps:</strong> Infrastructure-as-Code workflow design and CI/CD pipeline implementation
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <strong>Technology Assessment:</strong> Evaluation of current infrastructure readiness for automation and AI integration
                   </div>
                 </li>
               </ul>
