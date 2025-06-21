@@ -31,7 +31,7 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Network Automation</h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-gray-800 mb-6">
                 Streamline your network operations with intelligent automation that eliminates manual processes, 
                 reduces errors, and accelerates deployment times across your entire infrastructure.
               </p>
@@ -40,7 +40,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Ansible AWX:</strong> Enterprise-grade automation orchestration with centralized job management
                   </div>
                 </li>
@@ -48,7 +48,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Custom Python Solutions:</strong> Tailored automation scripts using NETCONF, RESTCONF, and vendor APIs
                   </div>
                 </li>
@@ -56,7 +56,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>GitOps Workflows:</strong> Infrastructure-as-Code with Git-based change management and rollback
                   </div>
                 </li>
@@ -64,7 +64,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Configuration Management:</strong> Automated device configuration and compliance monitoring
                   </div>
                 </li>
@@ -72,7 +72,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>DevOps Integration:</strong> CI/CD pipelines for network changes with automated testing and validation
                   </div>
                 </li>
@@ -80,7 +80,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Zero-Touch Provisioning:</strong> Rapid deployment of new network devices and services
                   </div>
                 </li>
@@ -88,7 +88,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Containerization & Kubernetes:</strong> Microservices-based automation platforms with scalable orchestration
                   </div>
                 </li>
@@ -96,7 +96,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Linux Infrastructure:</strong> Enterprise Linux environments optimized for automation workloads
                   </div>
                 </li>
@@ -104,7 +104,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Virtualization Platforms:</strong> VMware, KVM, and cloud-native infrastructure automation
                   </div>
                 </li>
@@ -119,7 +119,7 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">AI-Driven Intelligence</h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-gray-800 mb-6">
                 Harness the power of artificial intelligence and machine learning to gain unprecedented 
                 insights into your network performance and predict potential issues before they occur.
               </p>
@@ -128,7 +128,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Predictive Analytics:</strong> Forecast network failures and capacity needs
                   </div>
                 </li>
@@ -136,7 +136,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Anomaly Detection:</strong> Real-time identification of unusual network behavior
                   </div>
                 </li>
@@ -144,7 +144,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Intelligent Optimization:</strong> Automatic performance tuning and resource allocation
                   </div>
                 </li>
@@ -152,7 +152,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>RAG (Retrieval-Augmented Generation):</strong> Intelligent document retrieval and automated response generation
                   </div>
                 </li>
@@ -160,7 +160,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Natural Language Processing:</strong> Convert complex network requirements into automated workflows
                   </div>
                 </li>
@@ -168,7 +168,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Machine Learning Models:</strong> Custom-trained models for network pattern recognition and optimization
                   </div>
                 </li>
@@ -183,7 +183,7 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Security Automation</h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-gray-800 mb-6">
                 Strengthen your network security posture with automated threat detection, 
                 response capabilities, and compliance monitoring that adapts to evolving threats.
               </p>
@@ -192,7 +192,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Threat Detection:</strong> AI-powered identification of security threats
                   </div>
                 </li>
@@ -200,7 +200,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>SOAR (Security Orchestration):</strong> Automated incident response and threat mitigation workflows
                   </div>
                 </li>
@@ -208,7 +208,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Automated Response:</strong> Immediate containment and mitigation of security incidents
                   </div>
                 </li>
@@ -216,7 +216,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Compliance Monitoring:</strong> Continuous assessment of security policies
                   </div>
                 </li>
@@ -224,7 +224,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Vulnerability Management:</strong> Automated scanning, assessment, and remediation of security weaknesses
                   </div>
                 </li>
@@ -232,7 +232,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Zero Trust Implementation:</strong> Automated micro-segmentation and identity-based access controls
                   </div>
                 </li>
@@ -247,7 +247,7 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Consulting & Strategy</h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-gray-800 mb-6">
                 Develop a comprehensive network automation strategy that aligns with your business 
                 objectives and technical requirements through personalized guidance and hands-on expertise.
               </p>
@@ -256,7 +256,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Automation Roadmapping:</strong> Strategic planning for Ansible AWX deployment and Python automation frameworks
                   </div>
                 </li>
@@ -264,7 +264,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>AI/ML Integration:</strong> Implementation guidance for RAG systems and predictive analytics in network operations
                   </div>
                 </li>
@@ -272,7 +272,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Security Architecture:</strong> SOAR implementation and Zero Trust network design consultation
                   </div>
                 </li>
@@ -280,7 +280,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>GitOps & DevOps:</strong> Infrastructure-as-Code workflow design and CI/CD pipeline implementation
                   </div>
                 </li>
@@ -288,7 +288,7 @@ export default function Services() {
                   <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <div>
+                  <div className="text-gray-900">
                     <strong>Technology Assessment:</strong> Evaluation of current infrastructure readiness for automation and AI integration
                   </div>
                 </li>
