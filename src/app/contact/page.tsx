@@ -26,7 +26,11 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
                 Send us a Message
               </h2>
-              <form className="space-y-6">
+              <form 
+                action="https://formspree.io/f/YOUR_FORM_ID" 
+                method="POST"
+                className="space-y-6"
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -140,7 +144,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
                     <p className="text-gray-600">
-                      info@alpharez.com<br />
+                      steve.clement@alpharez.com<br />
                       <span className="text-sm">We respond within 24 hours</span>
                     </p>
                   </div>
