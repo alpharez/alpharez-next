@@ -31,6 +31,7 @@ export default function Contact() {
                 method="POST"
                 className="space-y-6"
               >
+                <input type="hidden" name="_next" value="/thanks" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
