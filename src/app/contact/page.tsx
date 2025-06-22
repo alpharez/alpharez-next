@@ -27,7 +27,7 @@ export default function Contact() {
                 Send us a Message
               </h2>
               <form 
-                action="https://formspree.io/f/YOUR_FORM_ID" 
+                action="https://formspree.io/f/mdkzwaev" 
                 method="POST"
                 className="space-y-6"
               >
