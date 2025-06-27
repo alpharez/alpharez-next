@@ -11,11 +11,10 @@ export default function Footer() {
               <Image
                 src="/alpharez_white_logo.svg"
                 alt="Alpharez Logo"
-                width={32}
-                height={32}
-                className="h-8 w-auto"
+                width={48}
+                height={48}
+                className="h-12 w-auto"
               />
-              <h3 className="text-2xl font-bold text-blue-400">Alpharez</h3>
             </div>
             <p className="text-gray-300 max-w-md">
               Transforming network infrastructure through intelligent automation and AI-driven solutions.

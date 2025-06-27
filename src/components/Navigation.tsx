@@ -12,11 +12,10 @@ export default function Navigation() {
                 <Image
                   src="/alpharez_primary_logo.svg"
                   alt="Alpharez Logo"
-                  width={32}
-                  height={32}
-                  className="h-8 w-auto"
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto"
                 />
-                <span className="text-xl font-bold text-blue-600">Alpharez</span>
               </Link>
             </div>
             <div className="hidden md:block">
