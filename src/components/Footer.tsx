@@ -33,6 +33,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/about" className="hover:text-white">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+              <li><Link href="/alpharez_minimalist_logo.html" className="hover:text-white">Brand Guide</Link></li>
             </ul>
           </div>
         </div>

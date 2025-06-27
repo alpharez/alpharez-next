@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpharez Consulting - Minimalist Logo System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 3rem;
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        
+        .logo-variations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .logo-variant {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #ecf0f1;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-variant:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        
+        .logo-variant h3 {
+            color: #34495e;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .logo-display {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+        }
+        
+        .logo-display.dark {
+            background: #2c3e50;
+        }
+        
+        .logo-display.colored {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        /* Primary Logo */
+        .logo-primary {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        
+        .logo-primary .icon {
+            width: 45px;
+            height: 45px;
+            background: #2c3e50;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .logo-primary .text {
+            font-size: 26px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .logo-primary .consulting {
+            font-size: 12px;
+            color: #7f8c8d;
+            display: block;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            margin-top: -3px;
+        }
+        
+        /* White Version */
+        .logo-white .icon {
+            background: white;
+            color: #2c3e50;
+        }
+        
+        .logo-white .text {
+            color: white;
+        }
+        
+        .logo-white .consulting {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Colored Version */
+        .logo-colored .icon {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+        
+        .logo-colored .text {
+            color: white;
+        }
+        
+        .logo-colored .consulting {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        /* Horizontal Layout */
+        .logo-horizontal {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-horizontal .text {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+        
+        .logo-horizontal .consulting {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Stacked Layout */
+        .logo-stacked {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-stacked .icon {
+            width: 50px;
+            height: 50px;
+            font-size: 26px;
+        }
+        
+        .logo-stacked .text {
+            text-align: center;
+        }
+        
+        /* Icon Only */
+        .logo-icon-only .icon {
+            width: 60px;
+            height: 60px;
+            font-size: 32px;
+            border-radius: 12px;
+        }
+        
+        /* Applications */
+        .applications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .application {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .application h4 {
+            color: #34495e;
+            margin-bottom: 1rem;
+        }
+        
+        .business-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            width: 200px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .business-card .logo-primary {
+            transform: scale(0.7);
+            transform-origin: left center;
+        }
+        
+        .letterhead {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            height: 150px;
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .letterhead .logo-primary {
+            transform: scale(0.6);
+            transform-origin: left top;
+        }
+        
+        .website-header {
+            background: #2c3e50;
+            border-radius: 8px;
+            padding: 1rem;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .favicon-demo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .favicon {
+            width: 32px;
+            height: 32px;
+            background: #2c3e50;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        
+        .color-palette {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .color-swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .primary { background: #2c3e50; }
+        .secondary { background: #3498db; }
+        .accent { background: #e74c3c; }
+        .neutral { background: #7f8c8d; color: white; }
+        .light { background: #ecf0f1; color: #2c3e50; }
+        
+        @media (max-width: 768px) {
+            .logo-variations {
+                grid-template-columns: 1fr;
+            }
+            
+            .applications {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Alpharez Consulting</h1>
+            <p>Minimalist Logo System & Brand Identity</p>
+        </div>
+        
+        <div class="content">
+            <!-- Logo Variations -->
+            <div class="section">
+                <h2 class="section-title">Logo Variations</h2>
+                
+                <div class="logo-variations">
+                    <div class="logo-variant">
+                        <h3>Primary Logo</h3>
+                        <div class="logo-display">
+                            <div class="logo-primary">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Main logo for most applications</p>
+                    </div>
+                    
+                    <div class="logo-variant">
+                        <h3>White Version</h3>
+                        <div class="logo-display dark">
+                            <div class="logo-primary logo-white">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>For dark backgrounds</p>
+                    </div>
+                    
+                    <div class="logo-variant">
+                        <h3>Colored Version</h3>
+                        <div class="logo-display colored">
+                            <div class="logo-primary logo-colored">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>For branded backgrounds</p>
+                    </div>
+                    
+                    <div class="logo-variant">
+                        <h3>Horizontal Layout</h3>
+                        <div class="logo-display">
+                            <div class="logo-primary logo-horizontal">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    <span>alpharez</span>
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>For wide spaces</p>
+                    </div>
+                    
+                    <div class="logo-variant">
+                        <h3>Stacked Layout</h3>
+                        <div class="logo-display">
+                            <div class="logo-primary logo-stacked">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>For square spaces</p>
+                    </div>
+                    
+                    <div class="logo-variant">
+                        <h3>Icon Only</h3>
+                        <div class="logo-display">
+                            <div class="logo-primary logo-icon-only">
+                                <div class="icon">α</div>
+                            </div>
+                        </div>
+                        <p>For small applications</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Applications -->
+            <div class="section">
+                <h2 class="section-title">Real-World Applications</h2>
+                
+                <div class="applications">
+                    <div class="application">
+                        <h4>Business Card</h4>
+                        <div class="business-card">
+                            <div class="logo-primary">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 10px; color: #7f8c8d; text-align: right;">
+                                info@alpharez.com<br>
+                                (555) 123-4567
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="application">
+                        <h4>Letterhead</h4>
+                        <div class="letterhead">
+                            <div class="logo-primary">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                            <div style="position: absolute; bottom: 1rem; right: 1rem; font-size: 8px; color: #bdc3c7;">
+                                alpharez.com
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="application">
+                        <h4>Website Header</h4>
+                        <div class="website-header">
+                            <div class="logo-primary logo-white" style="transform: scale(0.8);">
+                                <div class="icon">α</div>
+                                <div class="text">
+                                    alpharez
+                                    <span class="consulting">CONSULTING</span>
+                                </div>
+                            </div>
+                            <div style="color: white; font-size: 12px;">Menu</div>
+                        </div>
+                    </div>
+                    
+                    <div class="application">
+                        <h4>Favicon & Social Icons</h4>
+                        <div class="favicon-demo">
+                            <div class="favicon" style="width: 16px; height: 16px; font-size: 10px;">α</div>
+                            <div class="favicon" style="width: 24px; height: 24px; font-size: 14px;">α</div>
+                            <div class="favicon">α</div>
+                            <div class="favicon" style="width: 48px; height: 48px; font-size: 24px;">α</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Color Palette -->
+            <div class="section">
+                <h2 class="section-title">Brand Colors</h2>
+                <div class="color-palette">
+                    <div class="color-swatch primary">
+                        Primary<br>#2c3e50
+                    </div>
+                    <div class="color-swatch secondary">
+                        Secondary<br>#3498db
+                    </div>
+                    <div class="color-swatch accent">
+                        Accent<br>#e74c3c
+                    </div>
+                    <div class="color-swatch neutral">
+                        Neutral<br>#7f8c8d
+                    </div>
+                    <div class="color-swatch light">
+                        Light<br>#ecf0f1
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Usage Guidelines -->
+            <div class="section">
+                <h2 class="section-title">Usage Guidelines</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 12px;">
+                        <h4 style="color: #27ae60; margin-bottom: 1rem;">✓ Do</h4>
+                        <ul style="color: #2c3e50; line-height: 1.6;">
+                            <li>Use adequate white space around the logo</li>
+                            <li>Maintain consistent proportions</li>
+                            <li>Use approved color combinations</li>
+                            <li>Ensure legibility at all sizes</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 12px;">
+                        <h4 style="color: #e74c3c; margin-bottom: 1rem;">✗ Don't</h4>
+                        <ul style="color: #2c3e50; line-height: 1.6;">
+                            <li>Stretch or distort the logo</li>
+                            <li>Use unauthorized colors</li>
+                            <li>Place on busy backgrounds</li>
+                            <li>Make the logo too small to read</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
