@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alpharez - Network Engineering Automation & AI",
   description: "Leading provider of network automation solutions and AI-driven infrastructure management for modern enterprises.",
+  icons: {
+    icon: "/alpharez_icon_only.svg",
+    shortcut: "/alpharez_icon_only.svg",
+    apple: "/alpharez_icon_only.svg",
+  },
 };
 
 export default function RootLayout({
