@@ -92,7 +92,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Network Automation</h3>
               <p className="text-gray-600 mb-6">
@@ -121,7 +121,17 @@ export default function Home() {
               </ul>
             </div>
             
-            <div className="bg-white rounded-xl p-8 shadow-lg">
+            <div className="flex justify-center lg:order-2">
+              <div className="relative">
+                <img 
+                  src="/ws-stock-prog1.jpg" 
+                  alt="Professional working with network automation technology on laptop and tablet with data analytics overlay"
+                  className="rounded-xl shadow-lg w-full max-w-md h-auto object-cover"
+                />
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl p-8 shadow-lg lg:order-3">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">AI-Driven Intelligence</h3>
               <p className="text-gray-600 mb-6">
                 Leverage machine learning and AI to predict issues, optimize performance, 
