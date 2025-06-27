@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   return (
@@ -7,8 +8,15 @@ export default function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-blue-600">
-                Alpharez
+              <Link href="/" className="flex items-center space-x-2">
+                <Image
+                  src="/alpharez_primary_logo.svg"
+                  alt="Alpharez Logo"
+                  width={32}
+                  height={32}
+                  className="h-8 w-auto"
+                />
+                <span className="text-xl font-bold text-blue-600">Alpharez</span>
               </Link>
             </div>
             <div className="hidden md:block">

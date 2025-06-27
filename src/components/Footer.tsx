@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">Alpharez</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/alpharez_white_logo.svg"
+                alt="Alpharez Logo"
+                width={32}
+                height={32}
+                className="h-8 w-auto"
+              />
+              <h3 className="text-2xl font-bold text-blue-400">Alpharez</h3>
+            </div>
             <p className="text-gray-300 max-w-md">
               Transforming network infrastructure through intelligent automation and AI-driven solutions.
             </p>
