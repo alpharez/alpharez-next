@@ -12,9 +12,9 @@ export default function Navigation() {
                 <Image
                   src="/alpharez_primary_logo.svg"
                   alt="Alpharez Logo"
-                  width={48}
-                  height={48}
-                  className="h-12 w-auto"
+                  width={96}
+                  height={96}
+                  className="h-24 w-auto"
                 />
               </Link>
             </div>
