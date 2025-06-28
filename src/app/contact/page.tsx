@@ -145,7 +145,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
                     <p className="text-gray-600">
-                      steve.clement@alpharez.com<br />
+                      info@alpharez.com<br />
                       <span className="text-sm">We respond within 24 hours</span>
                     </p>
                   </div>
@@ -162,8 +162,7 @@ export default function Contact() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact Information</h3>
                     <p className="text-gray-600">
                       Steven Clement<br />
-                      7237 Trillium Drive<br />
-                      Lewis Center, OH 43035
+                      steve.clement@alpharez.com
                     </p>
                   </div>
                 </div>
