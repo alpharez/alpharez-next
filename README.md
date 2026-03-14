@@ -8,7 +8,7 @@
   <p>
     <a href="https://alpharez.com"><img alt="Live Site" src="https://img.shields.io/badge/Live_Site-08111F?style=for-the-badge&logo=safari&logoColor=67E8F9" /></a>
     <a href="#quick-start"><img alt="Quick Start" src="https://img.shields.io/badge/Quick_Start-0B1324?style=for-the-badge&logo=vercel&logoColor=67E8F9" /></a>
-    <a href="#tech-stack"><img alt="Tech Stack" src="https://img.shields.io/badge/Next.js_15-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" /></a>
+    <a href="#tech-stack"><img alt="Tech Stack" src="https://img.shields.io/badge/Next.js_16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" /></a>
     <a href="#project-structure"><img alt="Project Structure" src="https://img.shields.io/badge/App_Router-0F172A?style=for-the-badge&logo=react&logoColor=7DD3FC" /></a>
   </p>
 </div>
