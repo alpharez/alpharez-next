@@ -1,0 +1,87 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#08111F"/>
+  <rect width="1200" height="720" rx="32" fill="url(#bgGlow)"/>
+  <rect x="32" y="28" width="1136" height="76" rx="22" fill="#091426" stroke="rgba(148,163,184,0.16)"/>
+  <rect x="56" y="44" width="58" height="44" rx="14" fill="url(#logoGlow)" stroke="rgba(103,232,249,0.28)"/>
+  <text x="85" y="73" text-anchor="middle" fill="#E5EEF8" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">a</text>
+  <text x="132" y="64" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Alpharez</text>
+  <text x="132" y="86" fill="#7F8EA3" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="4">CONSULTING + AUTOMATION</text>
+
+  <rect x="438" y="40" width="350" height="52" rx="26" fill="#111B2E" stroke="rgba(148,163,184,0.16)"/>
+  <text x="488" y="72" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="15">Home</text>
+  <text x="554" y="72" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="15">Services</text>
+  <text x="641" y="72" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="15">About</text>
+  <text x="712" y="72" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="15">Contact</text>
+
+  <rect x="953" y="42" width="162" height="48" rx="24" fill="url(#cta)"/>
+  <text x="1034" y="72" text-anchor="middle" fill="#07111D" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Book Intro Call</text>
+
+  <rect x="58" y="134" width="451" height="32" rx="16" fill="#0D1B2E" stroke="rgba(103,232,249,0.28)"/>
+  <circle cx="80" cy="150" r="4" fill="#67E8F9"/>
+  <text x="94" y="155" fill="#C4F1FF" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="3">TECHNOLOGY CONSULTING FOR MODERN INFRASTRUCTURE</text>
+
+  <text x="58" y="238" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800">Architect smarter</text>
+  <text x="58" y="314" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800">systems.</text>
+  <text x="58" y="390" fill="url(#headline)" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800">Automate the work</text>
+  <text x="58" y="466" fill="url(#headline)" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800">that slows teams</text>
+  <text x="58" y="542" fill="url(#headline)" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800">down.</text>
+
+  <text x="58" y="596" fill="#A0AEC0" font-family="Segoe UI, Arial, sans-serif" font-size="18">Premium consulting site for infrastructure modernization, automation,</text>
+  <text x="58" y="624" fill="#A0AEC0" font-family="Segoe UI, Arial, sans-serif" font-size="18">and AI-assisted operations.</text>
+
+  <rect x="58" y="654" width="166" height="50" rx="25" fill="url(#cta)"/>
+  <text x="141" y="685" text-anchor="middle" fill="#07111D" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Start a Conversation</text>
+
+  <g opacity="0.96">
+    <rect x="698" y="132" width="422" height="540" rx="32" fill="#0B1425" stroke="rgba(148,163,184,0.16)"/>
+    <rect x="724" y="160" width="370" height="484" rx="28" fill="#101A2D" stroke="rgba(103,232,249,0.16)"/>
+    <text x="748" y="216" fill="#6FB8D6" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4">OPERATING MODEL</text>
+    <rect x="1002" y="190" width="82" height="30" rx="15" fill="#103A35" stroke="rgba(110,231,183,0.22)"/>
+    <text x="1043" y="209" text-anchor="middle" fill="#A7F3D0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">STABLE</text>
+    <text x="748" y="262" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">From reactive operations to</text>
+    <text x="748" y="296" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">resilient delivery</text>
+
+    <rect x="748" y="332" width="312" height="54" rx="16" fill="#111B2E" stroke="rgba(148,163,184,0.12)"/>
+    <rect x="748" y="402" width="312" height="54" rx="16" fill="#111B2E" stroke="rgba(148,163,184,0.12)"/>
+    <rect x="748" y="472" width="312" height="54" rx="16" fill="#111B2E" stroke="rgba(148,163,184,0.12)"/>
+    <circle cx="770" cy="359" r="5" fill="#67E8F9"/>
+    <circle cx="770" cy="429" r="5" fill="#67E8F9"/>
+    <circle cx="770" cy="499" r="5" fill="#67E8F9"/>
+    <text x="788" y="364" fill="#D8E2F0" font-family="Segoe UI, Arial, sans-serif" font-size="13">Assess architecture and operational bottlenecks</text>
+    <text x="788" y="434" fill="#D8E2F0" font-family="Segoe UI, Arial, sans-serif" font-size="13">Prioritize highest-leverage automation opportunities</text>
+    <text x="788" y="504" fill="#D8E2F0" font-family="Segoe UI, Arial, sans-serif" font-size="13">Implement telemetry, controls, and rollout patterns</text>
+
+    <rect x="748" y="560" width="98" height="98" rx="18" fill="#0B1425" stroke="rgba(148,163,184,0.14)"/>
+    <rect x="860" y="560" width="98" height="98" rx="18" fill="#0B1425" stroke="rgba(148,163,184,0.14)"/>
+    <rect x="972" y="560" width="98" height="98" rx="18" fill="#0B1425" stroke="rgba(148,163,184,0.14)"/>
+    <text x="762" y="599" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">90%</text>
+    <text x="874" y="599" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">4x</text>
+    <text x="986" y="599" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">24/7</text>
+    <text x="762" y="624" fill="#8EA1B6" font-family="Segoe UI, Arial, sans-serif" font-size="11">less manual</text>
+    <text x="762" y="640" fill="#8EA1B6" font-family="Segoe UI, Arial, sans-serif" font-size="11">workflow effort</text>
+    <text x="874" y="624" fill="#8EA1B6" font-family="Segoe UI, Arial, sans-serif" font-size="11">faster rollout</text>
+    <text x="874" y="640" fill="#8EA1B6" font-family="Segoe UI, Arial, sans-serif" font-size="11">velocity</text>
+    <text x="986" y="624" fill="#8EA1B6" font-family="Segoe UI, Arial, sans-serif" font-size="11">operational</text>
+    <text x="986" y="640" fill="#8EA1B6" font-family="Segoe UI, Arial, sans-serif" font-size="11">visibility</text>
+  </g>
+
+  <defs>
+    <linearGradient id="cta" x1="953" y1="42" x2="1115" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="58" y1="342" x2="565" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="0.55" stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#FEF3C7"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(152 120) rotate(24.7751) scale(762.508 482.746)">
+      <stop stop-color="#0EA5E9" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#08111F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="logoGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(85 66) rotate(90) scale(30 30)">
+      <stop stop-color="#67E8F9" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#1E293B" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+</svg>

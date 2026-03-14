@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="public/alpharez_horizontal_logo.svg" alt="Alpharez" width="340" />
 
-## Getting Started
+  <h1>Alpharez Marketing Site</h1>
+  <p><strong>Consulting + Automation</strong></p>
+  <p>Premium marketing site for Alpharez, a technology consulting business focused on infrastructure modernization, automation, and AI-assisted operations.</p>
 
-First, run the development server:
+  <p>
+    <a href="https://alpharez.com"><img alt="Live Site" src="https://img.shields.io/badge/Live_Site-08111F?style=for-the-badge&logo=safari&logoColor=67E8F9" /></a>
+    <a href="#quick-start"><img alt="Quick Start" src="https://img.shields.io/badge/Quick_Start-0B1324?style=for-the-badge&logo=vercel&logoColor=67E8F9" /></a>
+    <a href="#tech-stack"><img alt="Tech Stack" src="https://img.shields.io/badge/Next.js_15-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" /></a>
+    <a href="#project-structure"><img alt="Project Structure" src="https://img.shields.io/badge/App_Router-0F172A?style=for-the-badge&logo=react&logoColor=7DD3FC" /></a>
+  </p>
+</div>
 
+## Preview
+<div align="center">
+  <img src="public/readme-preview.svg" alt="Alpharez homepage preview" width="920" />
+</div>
+
+## Overview
+This repository contains the public-facing Alpharez website built with Next.js, React, TypeScript, and Tailwind CSS v4. The site uses a dark, premium visual system and focuses on conversion-oriented pages for `Home`, `Services`, `About`, `Contact`, and `Thanks`.
+
+## Quick Start
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` to view the site locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- `Next.js 15` with the App Router
+- `React 19`
+- `TypeScript`
+- `Tailwind CSS v4`
+- `ESLint` with the Next.js config
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
+- `npm run dev` starts the local development server with Turbopack.
+- `npm run build` creates the production build.
+- `npm run start` serves the production build locally.
+- `npm run lint` runs linting checks.
 
-## Learn More
+## Project Structure
+```text
+src/app/           App Router pages and global styles
+src/components/    Shared layout components
+public/            Logos, icons, and marketing assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+Key routes:
+- `src/app/page.tsx`
+- `src/app/services/page.tsx`
+- `src/app/about/page.tsx`
+- `src/app/contact/page.tsx`
+- `src/app/thanks/page.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Notes
+- The site is configured for static export in `next.config.ts`.
+- Google Analytics is wired in `src/app/layout.tsx`.
+- The contact form posts through Formspree and redirects to `/thanks`.
+- Brand assets live in `public/`, including multiple logo variants and supporting imagery.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
+Build the static site with:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The generated export can be deployed to static hosting platforms such as Azure Static Web Apps, Vercel, Netlify, or similar providers.
