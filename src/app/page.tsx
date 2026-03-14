@@ -1,181 +1,217 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const capabilities = [
+  {
+    title: "Platform-agnostic automation",
+    description:
+      "Design workflows that standardize change delivery across vendors, environments, and operating models.",
+  },
+  {
+    title: "AI-assisted operations",
+    description:
+      "Apply intelligent analysis to detect drift, surface risk, and reduce time spent chasing noisy signals.",
+  },
+  {
+    title: "Executive-ready roadmaps",
+    description:
+      "Turn engineering priorities into phased transformation plans with measurable operational outcomes.",
+  },
+];
+
+const outcomes = [
+  { value: "90%", label: "less manual effort in routine change workflows" },
+  { value: "4x", label: "faster rollout velocity for new infrastructure patterns" },
+  { value: "24/7", label: "operational visibility with automation-first controls" },
+];
+
+const industries = ["Enterprise IT", "Managed Services", "Financial Services", "Healthcare"];
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Intelligent Network
-              <span className="text-blue-300 block">Automation</span>
+    <main className="page-shell min-h-screen">
+      <section className="section-shell px-4 pb-14 pt-16 sm:px-6 lg:px-8 lg:pb-20 lg:pt-24">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <span className="eyebrow mb-6">Technology consulting for modern infrastructure</span>
+            <h1 className="section-title max-w-4xl text-5xl leading-[0.96] md:text-7xl">
+              Architect smarter systems.
+              <span className="block bg-gradient-to-r from-cyan-200 via-sky-300 to-amber-200 bg-clip-text text-transparent">
+                Automate the work that slows teams down.
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Transform your network infrastructure with AI-driven automation solutions 
-              that reduce complexity, enhance security, and accelerate innovation.
+            <p className="section-copy mt-6 max-w-2xl text-lg leading-8 md:text-xl">
+              Alpharez helps organizations modernize network and infrastructure operations with
+              automation strategy, AI-informed observability, and implementation support that
+              reduces fragility without adding noise.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
-                Start Your Transformation
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link href="/contact" className="button-primary px-7 py-4 text-base">
+                Start a Conversation
               </Link>
-              <Link href="/services" className="border-2 border-blue-300 text-blue-100 hover:bg-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+              <Link href="/services" className="button-secondary px-7 py-4 text-base">
                 Explore Services
               </Link>
             </div>
+
+            <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-300">
+              {industries.map((industry) => (
+                <span
+                  key={industry}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur"
+                >
+                  {industry}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="panel grid-fade rounded-[2rem] p-6 sm:p-8">
+            <div className="rounded-[1.5rem] border border-cyan-300/20 bg-[radial-gradient(circle_at_top,rgba(103,232,249,0.16),transparent_42%),linear-gradient(180deg,rgba(15,23,42,0.98),rgba(8,16,30,0.94))] p-6">
+              <div className="mb-8 flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/80">Operating model</p>
+                  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">
+                    From reactive operations to resilient delivery
+                  </h2>
+                </div>
+                <div className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">
+                  Stable
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  "Assess architecture, tooling, and operational bottlenecks",
+                  "Prioritize automation opportunities with the highest leverage",
+                  "Implement controls, telemetry, and rollout patterns teams can trust",
+                ].map((item) => (
+                  <div key={item} className="panel-soft flex items-start gap-3 rounded-2xl p-4">
+                    <div className="mt-1 h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_16px_rgba(103,232,249,0.8)]" />
+                    <p className="text-sm leading-7 text-slate-200">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                {outcomes.map((outcome) => (
+                  <div key={outcome.label} className="rounded-2xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-3xl font-semibold tracking-tight text-white">{outcome.value}</div>
+                    <p className="mt-2 text-sm leading-6 text-slate-400">{outcome.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Alpharez?
+      <section className="section-shell px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="panel-soft rounded-[2rem] px-6 py-5 sm:px-8">
+            <div className="flex flex-col gap-3 text-sm uppercase tracking-[0.24em] text-slate-400 md:flex-row md:items-center md:justify-between">
+              <span>What clients bring us in for</span>
+              <span className="text-cyan-200/80">Strategy • Delivery • Operating leverage</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-shell px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-3xl">
+            <span className="eyebrow mb-5">Core capabilities</span>
+            <h2 className="section-title text-3xl md:text-5xl">
+              Consulting that turns technical complexity into momentum.
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We combine cutting-edge AI technology with deep network engineering expertise 
-              to deliver unparalleled automation solutions.
+            <p className="section-copy mt-5 text-lg leading-8">
+              We combine architecture thinking with implementation depth, so recommendations are
+              practical, not theoretical.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {capabilities.map((capability, index) => (
+              <div key={capability.title} className="panel rounded-[1.75rem] p-7">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/20 bg-cyan-300/10 text-lg font-semibold text-cyan-100">
+                  0{index + 1}
+                </div>
+                <h3 className="text-2xl font-semibold tracking-tight text-white">{capability.title}</h3>
+                <p className="mt-4 text-base leading-7 text-slate-300">{capability.description}</p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h3>
-              <p className="text-gray-600">
-                Deploy network changes in minutes, not hours. Our automation reduces deployment time by 90%.
-              </p>
-            </div>
-            
-            <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Error-Free</h3>
-              <p className="text-gray-600">
-                AI-powered validation ensures configuration accuracy and prevents costly network outages.
-              </p>
-            </div>
-            
-            <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Scalable</h3>
-              <p className="text-gray-600">
-                From small enterprises to global networks, our solutions scale with your business needs.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Core Services
+      <section className="section-shell px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="panel rounded-[2rem] p-8">
+            <span className="eyebrow mb-5">Why Alpharez</span>
+            <h2 className="section-title text-3xl md:text-4xl">
+              Built for environments where reliability and speed must coexist.
             </h2>
-            <p className="text-xl text-gray-600">
-              Comprehensive solutions for modern network challenges
+            <p className="section-copy mt-5 text-base leading-8">
+              The strongest consulting partners do more than advise. They help teams create
+              durable systems, stronger operator confidence, and clearer decision-making.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Network Automation</h3>
-              <p className="text-gray-600 mb-6">
-                Streamline your network operations with intelligent automation that handles 
-                configuration management, monitoring, and incident response.
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="panel-soft rounded-[1.75rem] p-6">
+              <h3 className="text-xl font-semibold tracking-tight text-white">Executive clarity</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                Roadmaps and recommendations framed in business terms, not just tooling choices.
               </p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Configuration Management
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Automated Provisioning
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Real-time Monitoring
-                </li>
-              </ul>
             </div>
-            
-            <div className="flex justify-center lg:order-2">
-              <div className="relative">
-                <img 
-                  src="/ws-stock-prog1.jpg" 
-                  alt="Professional working with network automation technology on laptop and tablet with data analytics overlay"
-                  className="rounded-xl shadow-lg w-full max-w-md h-auto object-cover"
-                />
+            <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/60 shadow-[0_24px_80px_rgba(2,6,23,0.34)]">
+              <Image
+                src="/ws-stock-prog1.jpg"
+                alt="Professional working with network automation and analytics tools"
+                width={900}
+                height={900}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="panel-soft rounded-[1.75rem] p-6">
+              <h3 className="text-xl font-semibold tracking-tight text-white">Hands-on delivery</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                Architecture support backed by real implementation experience across modern stacks.
+              </p>
+              <div className="mt-5 border-t border-white/10 pt-5">
+                <h4 className="text-base font-semibold text-white">Long-term resilience</h4>
+                <p className="mt-2 text-sm leading-7 text-slate-300">
+                  Controls, patterns, and operating practices designed to outlast one-off projects.
+                </p>
               </div>
-            </div>
-            
-            <div className="bg-white rounded-xl p-8 shadow-lg lg:order-3">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">AI-Driven Intelligence</h3>
-              <p className="text-gray-600 mb-6">
-                Leverage machine learning and AI to predict issues, optimize performance, 
-                and make intelligent decisions about your network infrastructure.
-              </p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Predictive Analytics
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Anomaly Detection
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Performance Optimization
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Transform Your Network?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join hundreds of enterprises that trust Alpharez to power their network infrastructure.
-          </p>
-          <Link href="/contact" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
-            Schedule a Consultation
-          </Link>
+      <section className="section-shell px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pb-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="panel rounded-[2.25rem] px-8 py-10 text-center sm:px-12">
+            <span className="eyebrow mb-6">Let&apos;s make the site work harder</span>
+            <h2 className="section-title text-3xl md:text-5xl">
+              Need a technology consulting partner that feels credible from the first meeting?
+            </h2>
+            <p className="section-copy mx-auto mt-5 max-w-2xl text-lg leading-8">
+              We help teams simplify infrastructure, improve reliability, and build operating
+              models that scale without constant firefighting.
+            </p>
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <Link href="/contact" className="button-primary px-7 py-4 text-base">
+                Book Intro Call
+              </Link>
+              <Link href="/about" className="button-secondary px-7 py-4 text-base">
+                Meet Alpharez
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

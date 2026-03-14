@@ -1,46 +1,72 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <Image
-                src="/alpharez_white_logo.svg"
-                alt="Alpharez Logo"
-                width={96}
-                height={96}
-                className="h-24 w-auto"
-              />
-            </div>
-            <p className="text-gray-300 max-w-md">
-              Transforming network infrastructure through intelligent automation and AI-driven solutions.
+    <footer className="relative z-10 border-t border-white/10 bg-slate-950/80">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mb-12 grid gap-10 lg:grid-cols-[1.4fr_0.7fr_0.7fr]">
+          <div className="panel rounded-[2rem] p-8">
+            <Image
+              src="/alpharez_white_logo.svg"
+              alt="Alpharez logo"
+              width={220}
+              height={70}
+              className="mb-5 h-auto w-40"
+            />
+            <h3 className="section-title mb-4 text-3xl">
+              Modern consulting for teams that cannot afford brittle networks.
+            </h3>
+            <p className="section-copy max-w-xl text-base">
+              Alpharez helps engineering leaders move from manual operations to resilient,
+              AI-assisted infrastructure with faster change velocity and stronger controls.
             </p>
           </div>
+
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li><Link href="/services" className="hover:text-white">Network Automation</Link></li>
-              <li><Link href="/services" className="hover:text-white">AI Infrastructure</Link></li>
-              <li><Link href="/services" className="hover:text-white">Consulting</Link></li>
+            <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">
+              Explore
+            </h4>
+            <ul className="space-y-3 text-slate-300">
+              <li>
+                <Link href="/services" className="hover:text-white">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-white">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
+
           <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-              <li><Link href="/alpharez_minimalist_logo.html" className="hover:text-white">Brand Guide</Link></li>
+            <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">
+              Resources
+            </h4>
+            <ul className="space-y-3 text-slate-300">
+              <li>Network Automation</li>
+              <li>AI-Driven Operations</li>
+              <li>
+                <Link href="/alpharez_minimalist_logo.html" className="hover:text-white">
+                  Brand Guide
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700">
-          <p className="text-center text-gray-400">
-            © 2024 Alpharez. All rights reserved.
-          </p>
+
+        <div className="flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+          <p>© {year} Alpharez. All rights reserved.</p>
+          <p>Technology consulting focused on automation, resilience, and operating leverage.</p>
         </div>
       </div>
     </footer>
