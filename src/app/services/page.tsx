@@ -51,26 +51,50 @@ const services = [
   },
 ];
 
+const engagementModes = [
+  {
+    title: "Assessment sprint",
+    copy: "A focused review that identifies constraints, priorities, and the highest-leverage next moves.",
+  },
+  {
+    title: "Targeted implementation",
+    copy: "A scoped engagement to deliver one critical automation, integration, or architecture improvement well.",
+  },
+  {
+    title: "Strategic partnership",
+    copy: "Ongoing advisory and delivery support for teams modernizing a broader operating model.",
+  },
+];
+
 const process = ["Assess", "Design", "Implement", "Optimize"];
 
 export default function Services() {
   return (
     <main className="page-shell min-h-screen">
       <section className="section-shell px-4 pb-16 pt-20 sm:px-6 lg:px-8 lg:pb-20 lg:pt-24">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.95fr]">
-          <div>
-            <span className="eyebrow mb-6">Services</span>
-            <h1 className="section-title text-4xl leading-tight md:text-6xl">
-              Advisory and delivery services for complex technology environments.
-            </h1>
-            <p className="section-copy mt-6 max-w-2xl text-lg leading-8">
-              Alpharez helps teams plan, implement, and operationalize smarter infrastructure
-              systems with a consulting approach that balances speed, resilience, and long-term
-              maintainability.
-            </p>
-          </div>
+        <div className="hero-grid panel mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] p-8 sm:p-10 lg:p-12">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-start">
+            <div>
+              <span className="eyebrow mb-6">Services</span>
+              <h1 className="section-title text-4xl leading-tight md:text-6xl">
+                Advisory and delivery services for complex technology environments.
+              </h1>
+              <p className="section-copy mt-6 max-w-2xl text-lg leading-8">
+                Alpharez helps teams plan, implement, and operationalize smarter infrastructure
+                systems with a consulting approach that balances speed, resilience, and long-term
+                maintainability.
+              </p>
 
-          <div className="panel rounded-[2rem] p-8">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link href="/contact" className="button-primary px-7 py-4 text-base">
+                  Schedule Consultation
+                </Link>
+                <Link href="/about" className="button-secondary px-7 py-4 text-base">
+                  Learn About Alpharez
+                </Link>
+              </div>
+            </div>
+
             <div className="grid gap-4 sm:grid-cols-2">
               {[
                 "Architecture review",
@@ -78,17 +102,40 @@ export default function Services() {
                 "Platform integration",
                 "Team enablement",
               ].map((item) => (
-                <div key={item} className="panel-soft rounded-[1.5rem] p-5">
-                  <p className="text-base font-medium text-white">{item}</p>
+                <div key={item} className="panel-outline rounded-[1.5rem] p-5">
+                  <p className="mini-label">Capability</p>
+                  <p className="mt-3 text-base font-medium text-white">{item}</p>
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="divider-line my-8" />
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {engagementModes.map((mode) => (
+              <div key={mode.title} className="panel-soft rounded-[1.5rem] p-6">
+                <p className="mini-label">{mode.title}</p>
+                <p className="mt-3 text-sm leading-7 text-slate-300">{mode.copy}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="section-shell px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-3xl">
+            <span className="eyebrow mb-5">Service lines</span>
+            <h2 className="section-title text-3xl md:text-5xl">
+              Technical depth where it matters, strategic framing where it counts.
+            </h2>
+            <p className="section-copy mt-5 text-lg leading-8">
+              Each engagement is tailored, but these are the core areas where teams most often
+              bring us in.
+            </p>
+          </div>
+
           <div className="grid gap-6 lg:grid-cols-2">
             {services.map((service, index) => (
               <div key={service.title} className="panel rounded-[2rem] p-8">
@@ -96,7 +143,7 @@ export default function Services() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/20 bg-cyan-300/10 text-sm font-semibold text-cyan-100">
                     0{index + 1}
                   </div>
-                  <span className="text-xs uppercase tracking-[0.22em] text-slate-400">Service line</span>
+                  <span className="mini-label">Service line</span>
                 </div>
                 <h2 className="text-3xl font-semibold tracking-tight text-white">{service.title}</h2>
                 <p className="mt-4 text-base leading-8 text-slate-300">{service.summary}</p>
@@ -128,6 +175,14 @@ export default function Services() {
               We focus on phased delivery, measurable outcomes, and systems teams can actually
               operate after the engagement ends.
             </p>
+
+            <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+              <p className="mini-label">Best suited for</p>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                Infrastructure teams that need sharper architecture decisions, faster automation
+                delivery, and a more resilient operating model.
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-6 md:grid-cols-4">
@@ -153,7 +208,9 @@ export default function Services() {
         <div className="mx-auto max-w-7xl">
           <div className="panel rounded-[2.25rem] px-8 py-10 text-center sm:px-12">
             <span className="eyebrow mb-6">Next step</span>
-            <h2 className="section-title text-3xl md:text-5xl">Need help choosing the right entry point?</h2>
+            <h2 className="section-title text-3xl md:text-5xl">
+              Need help choosing the right entry point?
+            </h2>
             <p className="section-copy mx-auto mt-5 max-w-2xl text-lg leading-8">
               We can start with an assessment, a focused automation project, or a strategic review
               depending on where your team is today.

@@ -21,35 +21,55 @@ const faqs = [
   },
 ];
 
+const signals = [
+  "Response within 24 hours",
+  "Best for consulting-led infrastructure initiatives",
+  "Works for scoped projects or longer advisory partnerships",
+];
+
 export default function Contact() {
   return (
     <main className="page-shell min-h-screen">
       <section className="section-shell px-4 pb-16 pt-20 sm:px-6 lg:px-8 lg:pb-20 lg:pt-24">
-        <div className="mx-auto max-w-7xl">
-          <span className="eyebrow mb-6">Contact</span>
-          <h1 className="section-title max-w-4xl text-4xl leading-tight md:text-6xl">
-            Let&apos;s talk about where your infrastructure needs to go next.
-          </h1>
-          <p className="section-copy mt-6 max-w-2xl text-lg leading-8">
-            If you&apos;re exploring automation, operational redesign, or a broader modernization
-            effort, we can help you define the right starting point.
-          </p>
+        <div className="hero-grid panel mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] p-8 sm:p-10 lg:p-12">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-start">
+            <div>
+              <span className="eyebrow mb-6">Contact</span>
+              <h1 className="section-title max-w-4xl text-4xl leading-tight md:text-6xl">
+                Let&apos;s talk about where your infrastructure needs to go next.
+              </h1>
+              <p className="section-copy mt-6 max-w-2xl text-lg leading-8">
+                If you&apos;re exploring automation, operational redesign, or a broader modernization
+                effort, we can help you define the right starting point.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+              {signals.map((signal) => (
+                <div key={signal} className="panel-outline rounded-[1.5rem] p-5">
+                  <p className="mini-label">Signal</p>
+                  <p className="mt-3 text-sm leading-7 text-slate-200">{signal}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="section-shell px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.08fr_0.92fr]">
           <div className="panel rounded-[2rem] p-8 sm:p-10">
-            <h2 className="section-title text-3xl">Send a message</h2>
-            <p className="section-copy mt-3 text-base leading-7">
-              Share a few details and we&apos;ll follow up with the right next step.
-            </p>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <h2 className="section-title text-3xl">Send a message</h2>
+                <p className="section-copy mt-3 text-base leading-7">
+                  Share a few details and we&apos;ll follow up with the right next step.
+                </p>
+              </div>
+              <div className="mini-label text-cyan-200/80">Formspree secure submission</div>
+            </div>
 
-            <form
-              action="https://formspree.io/f/mdkzwaev"
-              method="POST"
-              className="mt-8 space-y-6"
-            >
+            <form action="https://formspree.io/f/mdkzwaev" method="POST" className="mt-8 space-y-6">
               <input type="hidden" name="_next" value="/thanks" />
 
               <div className="grid gap-6 md:grid-cols-2">
@@ -117,6 +137,14 @@ export default function Contact() {
                 />
               </div>
 
+              <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                <p className="mini-label">Helpful context</p>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  Include the current state, major constraints, the platforms involved, and what a
+                  successful result would look like for your team.
+                </p>
+              </div>
+
               <button type="submit" className="button-primary w-full px-7 py-4 text-base">
                 Send Message
               </button>
@@ -129,17 +157,17 @@ export default function Contact() {
               <h2 className="section-title text-3xl">Let&apos;s connect</h2>
               <div className="mt-8 space-y-5">
                 <div className="panel-soft rounded-[1.5rem] p-5">
-                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400">General inbox</p>
+                  <p className="mini-label">General inbox</p>
                   <p className="mt-3 text-lg font-medium text-white">info@alpharez.com</p>
                   <p className="mt-2 text-sm text-slate-400">Typical response time: within 24 hours</p>
                 </div>
                 <div className="panel-soft rounded-[1.5rem] p-5">
-                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Primary contact</p>
+                  <p className="mini-label">Primary contact</p>
                   <p className="mt-3 text-lg font-medium text-white">Steven Clement</p>
                   <p className="mt-2 text-sm text-slate-300">steve.clement@alpharez.com</p>
                 </div>
                 <div className="panel-soft rounded-[1.5rem] p-5">
-                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Best fit</p>
+                  <p className="mini-label">Best fit</p>
                   <p className="mt-3 text-base leading-7 text-slate-200">
                     Ideal for infrastructure teams planning automation work, operating model changes,
                     or consulting-led modernization initiatives.
@@ -155,6 +183,20 @@ export default function Contact() {
                 A short consultation is often the fastest way to identify the right scope, the most
                 important constraints, and the highest-value next move.
               </p>
+
+              <div className="mt-8 space-y-3">
+                {[
+                  "Review goals and current blockers",
+                  "Clarify likely engagement shape",
+                  "Align on practical next steps",
+                ].map((item) => (
+                  <div key={item} className="panel-outline flex items-center gap-3 rounded-[1.25rem] px-4 py-3">
+                    <span className="h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.7)]" />
+                    <span className="text-sm text-slate-200">{item}</span>
+                  </div>
+                ))}
+              </div>
+
               <button className="button-secondary mt-8 w-full px-7 py-4 text-base">
                 Book Consultation
               </button>
@@ -168,6 +210,9 @@ export default function Contact() {
           <div className="mb-10 max-w-3xl">
             <span className="eyebrow mb-5">FAQ</span>
             <h2 className="section-title text-3xl md:text-5xl">A few practical questions, answered.</h2>
+            <p className="section-copy mt-5 text-lg leading-8">
+              Common questions we hear from teams evaluating consulting support or infrastructure modernization work.
+            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">

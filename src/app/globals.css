@@ -157,6 +157,14 @@ select {
   backdrop-filter: blur(16px);
 }
 
+.panel-outline {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)),
+    rgba(8, 16, 30, 0.54);
+  backdrop-filter: blur(14px);
+}
+
 .button-primary {
   display: inline-flex;
   align-items: center;
@@ -239,4 +247,35 @@ select {
   height: 6rem;
   background: linear-gradient(180deg, rgba(8, 17, 31, 0), rgba(8, 17, 31, 0.85));
   pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+}
+
+.hero-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  background:
+    linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at center, black, transparent 88%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.mini-label {
+  color: rgba(148, 163, 184, 0.86);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.divider-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(103, 232, 249, 0.35), transparent);
 }
