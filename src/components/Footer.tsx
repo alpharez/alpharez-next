@@ -31,6 +31,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-slate-300">
               <li>
+                <Link href="/clementfinancial" className="hover:text-white">
+                  Clement Financial
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="hover:text-white">
                   Services
                 </Link>
@@ -53,6 +58,8 @@ export default function Footer() {
               Resources
             </h4>
             <ul className="space-y-3 text-slate-300">
+              <li>Wealth Management</li>
+              <li>Accounting & Audit Support</li>
               <li>Network Automation</li>
               <li>AI-Driven Operations</li>
               <li>
