@@ -58,8 +58,6 @@ export default function Footer() {
               Resources
             </h4>
             <ul className="space-y-3 text-slate-300">
-              <li>Wealth Management</li>
-              <li>Accounting & Audit Support</li>
               <li>Network Automation</li>
               <li>AI-Driven Operations</li>
               <li>
